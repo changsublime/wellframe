@@ -1,6 +1,6 @@
 # Wellframe
 
-This API was implemented using Python 3.6 and Flask. If your machine does not have Flask installed, please install Flask using the line below.
+This API was implemented using Python 3.6 and Flask-RESTful. If your machine does not have Flask installed, please install Flask using the line below.
 ```
 pip install flask-restful
 ```
