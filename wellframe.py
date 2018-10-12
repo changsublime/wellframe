@@ -32,13 +32,13 @@ class Patient(Resource):
         parser.add_argument("medications")
         args = parser.parse_args()
 
-        available = 0
+        available = False
 
         for med in medications:
             if (args["medications"] == med["name"]):
-                available += 1
+                available = True
 
-        if (available == 0):
+        if (not available):
             return "Medication {} is not available.".format(args["medications"])
 
         for patient in patients:
