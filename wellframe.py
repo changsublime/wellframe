@@ -74,7 +74,7 @@ class Medication(Resource):
         for medication in medications:
             if(name == medication["name"]):
                 return medication
-        return "Medication not found"
+        return "Medication {} not found".format(name)
 
     def post(self, name):
         for medication in medications:
