@@ -4,9 +4,8 @@ from flask_restful import Api, Resource, reqparse
 app = Flask(__name__)
 api = Api(app)
 
-patients = [{"name" : "Changseob",
-            "medications" : []}]
-medications = [{"name" : "Xysol"}]
+patients = []
+medications = []
 
 class Patient(Resource):
     def get(self, name):
@@ -98,4 +97,4 @@ class Medication(Resource):
 api.add_resource(Patient, "/patient/<string:name>")
 api.add_resource(Medication, "/medication/<string:name>")
 
-app.run(debug=True)
+app.run(debug=False)
