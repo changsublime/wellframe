@@ -5,10 +5,13 @@ This API was implemented using Python 3.6 and Flask-RESTful. If your machine doe
 pip install flask-restful
 ```
 
-Use the following line to run the API.
+Use the following line to run the API and start the Flask server.
 ```
 python wellframe.py
 ```
+
+This code was tested using Insomnia. It can additionally be tested using curl or other API testing tools.
+
 
 ### Functionality
 ```
